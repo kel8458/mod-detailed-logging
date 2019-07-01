@@ -14,7 +14,6 @@ public:
   stringstream fullStream;
   bool loggingEnabled = sConfigMgr->GetBoolDefault("DeathDetailedLogging.enabled", true);
   int logDumpSize = sConfigMgr->GetIntDefault("DeathDetailedLogging.dumpSize", 10);
-  std::string  = _CONF_DIR;
 
   DeathStatTracker() : PlayerScript("DeathStatTracker") {
 
