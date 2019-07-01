@@ -13,7 +13,7 @@ public:
   
   stringstream fullStream;
   bool loggingEnabled = sConfigMgr->GetBoolDefault("KillDetailedLogging.enabled", true);
-  int logDumpSize = sConfigMgr->GetIntDefault("KillDetailedLogging.dumpSize", 0);
+  int logDumpSize = sConfigMgr->GetIntDefault("KillDetailedLogging.dumpSize", 10);
 
   KillStatTracker() : PlayerScript("KillStatTracker") {
 
