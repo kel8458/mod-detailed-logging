@@ -12,8 +12,9 @@ class DeathStatTracker : public PlayerScript {
 public:
 
   stringstream fullStream;
-  bool loggingEnabled = sConfigMgr->GetBoolDefault("KillDetailedLogging.enabled", true);
-  int logDumpSize = sConfigMgr->GetIntDefault("KillDetailedLogging.dumpSize", 0);
+  bool loggingEnabled = sConfigMgr->GetBoolDefault("DeathDetailedLogging.enabled", true);
+  int logDumpSize = sConfigMgr->GetIntDefault("DeathDetailedLogging.dumpSize", 10);
+  std::string  = _CONF_DIR;
 
   DeathStatTracker() : PlayerScript("DeathStatTracker") {
 
