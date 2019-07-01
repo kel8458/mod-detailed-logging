@@ -13,7 +13,7 @@ class ZoneAreaTracker : public PlayerScript {
 public:
   stringstream fullStream;
   bool loggingEnabled = sConfigMgr->GetBoolDefault("ZoneAreaDetailedLogging.enabled", true);
-  int logDumpSize = sConfigMgr->GetIntDefault("ZoneAreaDetailedLogging.dumpSize", 0);
+  int logDumpSize = sConfigMgr->GetIntDefault("ZoneAreaDetailedLogging.dumpSize", 10);
 
   ZoneAreaTracker() : PlayerScript("ZoneAreaTracker") { 
 
